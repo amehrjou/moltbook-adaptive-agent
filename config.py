@@ -18,7 +18,7 @@ def _get_moltbook_api_key() -> Optional[str]:
     key = os.getenv("MOLTBOOK_API_KEY")
     if key:
         return key.strip()
-    # Fallback: read from api_alone file in project root (same as portfolio_os pattern for secrets)
+    # Fallback: read from api_alone file in project root
     path = PROJECT_ROOT / "api_alone"
     if path.exists():
         try:
@@ -47,7 +47,7 @@ class Config:
     MOLTBOOK_ACTION_LOG_PATH: Optional[str] = os.getenv("MOLTBOOK_ACTION_LOG_PATH")
     MOLTBOOK_PERSONA_HISTORY_PATH: Optional[str] = os.getenv("MOLTBOOK_PERSONA_HISTORY_PATH")
 
-    # AI model configuration (same names as portfolio_os for consistency)
+    # AI model configuration
     VISION_MODEL_API_KEY: Optional[str] = os.getenv("VISION_MODEL_API_KEY")
     VISION_MODEL_ENDPOINT: Optional[str] = os.getenv("VISION_MODEL_ENDPOINT")
     VISION_MODEL_DEPLOYMENT: Optional[str] = os.getenv("VISION_MODEL_DEPLOYMENT")

@@ -8,7 +8,7 @@ from agent import moltbook_agent, ApiKeyDeps
 
 async def main():
     """Main function to interact with the Moltbook agent."""
-    # API key from Config (env MOLTBOOK_API_KEY or api_alone file – same pattern as portfolio_os)
+    # API key from Config (env MOLTBOOK_API_KEY or api_alone file)
     api_key = Config.MOLTBOOK_API_KEY
     if not api_key:
         print("Error: MOLTBOOK_API_KEY not found in environment or api_alone file")

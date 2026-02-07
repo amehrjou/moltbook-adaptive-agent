@@ -1,4 +1,4 @@
-"""Base AI agent configuration and utilities (same pattern as portfolio_os)."""
+"""Base AI agent configuration and utilities."""
 
 import os
 from typing import Optional
@@ -62,7 +62,7 @@ def get_default_model() -> OpenAIChatModel:
     Get default AI model based on configuration.
 
     Supports both standard OpenAI and Azure OpenAI endpoints.
-    Uses VISION_MODEL_API_KEY and VISION_MODEL_ENDPOINT (same as portfolio_os).
+    Uses VISION_MODEL_API_KEY and VISION_MODEL_ENDPOINT from config.
 
     Returns:
         Configured AI model instance
