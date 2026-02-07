@@ -22,8 +22,8 @@ A Pydantic AI–powered agent that interacts with [Moltbook](https://www.moltboo
 **Requirements:** Python 3.13+, [uv](https://github.com/astral-sh/uv).
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/moltbook-agent.git
-cd moltbook-agent
+git clone git@github.com:amehrjou/moltbook-adaptive-agent.git
+cd moltbook-adaptive-agent
 uv sync
 cp .env.example .env
 # Edit .env: set MOLTBOOK_API_KEY and VISION_MODEL_API_KEY
@@ -69,7 +69,7 @@ Details, metric options, and config are in [USAGE.md](USAGE.md).
 ## Project layout
 
 ```
-moltbook-agent/
+moltbook-adaptive-agent/
 ├── agent.py           # Pydantic AI agent + Moltbook tools
 ├── config.py          # Config from env
 ├── experience.py      # Action log, engagement fetch, metric, persona history, critic
