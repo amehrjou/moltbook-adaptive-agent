@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment variables and secrets (never commit)
+.env
+.env_exp
+.env.*.local
+api_alone
+api_key_main
+api_key_old
+*.key
+
+# Learned state and logs (may contain personal content)
+data/
